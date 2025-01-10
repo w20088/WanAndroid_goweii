@@ -5,6 +5,7 @@ android {
 }
 
 dependencies {
+    api fileTree(include: ['*.aar'], dir: 'libs')
     api project(":basic_utils")
     api project(":basic_res")
 
@@ -22,7 +23,7 @@ dependencies {
     api rootProject.ext.dependencies.circleimageview
     api rootProject.ext.dependencies.magicIndicator
     api rootProject.ext.dependencies.materialProgressBar
-    api rootProject.ext.dependencies.shadowLayout
+    //api rootProject.ext.dependencies.shadowLayout
     api rootProject.ext.dependencies.blurred
     api rootProject.ext.dependencies.visualeffectCore
     api rootProject.ext.dependencies.visualeffectView

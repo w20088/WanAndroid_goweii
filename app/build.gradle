@@ -41,6 +41,7 @@ repositories {
 }
 
 dependencies {
+    implementation fileTree(include: ['*.aar'], dir: 'libs')
     kapt rootProject.ext.dependencies.butterknifeCompiler
     implementation rootProject.ext.dependencies.startup
     implementation rootProject.ext.dependencies.cardview
@@ -75,5 +76,6 @@ dependencies {
     implementation rootProject.ext.dependencies.palette
     implementation rootProject.ext.dependencies.cropImageView
     implementation rootProject.ext.dependencies.biometric
+    implementation 'com.github.donkingliang:ConsecutiveScroller:4.6.4'
     implementation 'com.github.donkingliang:ConsecutiveScroller:4.6.4'
 }
